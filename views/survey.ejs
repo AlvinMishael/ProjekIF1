@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+            <title>Sample app</title>
+            <link type="css" rel=stylesheet href=../public/css/style.css>
+    </head>
+    <body>
+        <div id="form-container">
+                <form action="/survey" method="post">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" maxlength="20">
+            
+                    <label for="age">Age</label>
+                    <input type="number" id="age" name="age" min="17" max="40">
+            
+                    <div id="select-fav">
+                        <label for="favo">Favorite Fruit</label>
+                        <select name="favoriteFruit" id="favoriteFruit">
+                            <option value="Banana" selected>Banana</option>
+                            <option value="Apple">Apple</option>
+                            <option value="Orange">Orange</option>
+                        </select>
+                    </div>
+            
+                    <div id="select-gender">
+                        <p>Gender</p>
+                        <input type="radio" id="gender-male" value="male" checked name="gender">
+                        <label for="gender-male">male</label>
+                        <input type="radio" id="gender-female" value="female" name="gender">
+                        <label for="gender-female">female</label>
+                    </div>
+                    <input type="submit" value="Submit">
+            
+                </form>
+            </div>
+    </body>
+</html>
