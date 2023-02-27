@@ -20,6 +20,11 @@ app.listen(port,()=>{
 });
 
 app.get('/',async(req,res)=>{
-    res.render('home')
+    res.render('prompt')
 });
+
+// app.get('/survey',async(req,res)=>{
+//     res.render('survey')
+// });
+
 
