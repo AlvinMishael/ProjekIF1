@@ -27,4 +27,8 @@ app.get('/survey',async(req,res)=>{
     res.render('survey')
 });
 
+app.post('/survey',async(req,res)=>{
+    res.render('Res')
+});
+
 
