@@ -28,6 +28,13 @@ app.get('/survey',async(req,res)=>{
 });
 
 app.post('/survey',async(req,res)=>{
+    let name = req.body.name;
+    let age = req.body.age;
+    let fruit = req.body.favoriteFruit;
+
+    console.log(name)
+    console.log(age)
+    console.log(fruit)
     res.render('Res')
 });
 
