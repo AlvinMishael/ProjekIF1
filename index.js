@@ -23,8 +23,8 @@ app.get('/',async(req,res)=>{
     res.render('prompt')
 });
 
-// app.get('/survey',async(req,res)=>{
-//     res.render('survey')
-// });
+app.get('/survey',async(req,res)=>{
+    res.render('survey')
+});
 
 

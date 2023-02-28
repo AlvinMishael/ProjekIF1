@@ -8,11 +8,18 @@
 </head>
 <body>
     <script>
-        var uName = prompt("Username","")
-        var pass = prompt("Password","")
-
-        if(uName == "topcoder" && pass == "rocks")
-        window.location="survery"
+        var uName;
+        var pass = "";
+        do{
+            if(uName != "topcoder")
+                uName = prompt("Username","")
+            else
+                pass = prompt("Password","")
+        }while(pass != "rocks")
+        uName = "";
+        pass = "";
+        window.location="survey"
+        
     </script>
 </body>
 </html>
