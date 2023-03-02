@@ -5,13 +5,23 @@
     "author": "kelompok 1",
     "main": "index.js",
     "scripts": {
+<<<<<<< HEAD
         "start": "node index.js"
+=======
+        "start": "node index.js",
+	"q": "nodemon index.js"
+>>>>>>> 52abbf93dce64dd66c3eec6092b1c00f327e6cff
     },
     "type": "module",
     "dependencies": {
         "ejs": "^3.1.8"
     },
     "devDependencies": {
+<<<<<<< HEAD
         "express": "^4.18.2"
+=======
+        "express": "^4.18.2",
+        "nodemon": "^2.0.20"
+>>>>>>> 52abbf93dce64dd66c3eec6092b1c00f327e6cff
     }
 }
