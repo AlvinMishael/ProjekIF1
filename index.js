@@ -34,6 +34,7 @@ app.use("/", (req, res, next) => {
     let password = auth[1];
 
     if (username === "topcoder" && password === "rocks") {
+      res.status = 200;
       next();
     } else {
       let err = new Error("not authenticated!");
