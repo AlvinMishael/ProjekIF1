@@ -6,6 +6,8 @@ const port = 8080;
 const app = express();
 app.set("view engine", "ejs");
 
+
+// serving static page dari public
 // app.use(express.static(path.resolve("public")));
 
 app.use(express.urlencoded({ extended: false }));
@@ -14,6 +16,7 @@ app.use(express.urlencoded({ extended: false }));
 // bodyParser udah deprecated
 // app.use(bodyParser.json());
 // app.use(bodyParser.urlencoded({extended: true}));
+
 
 app.use("/", (req, res, next) => {
   let authHeader = req.headers.authorization;
