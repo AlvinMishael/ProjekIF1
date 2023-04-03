@@ -8,7 +8,7 @@ app.set("view engine", "ejs");
 
 
 // serving static page dari public
-// app.use(express.static(path.resolve("public")));
+app.use(express.static(path.resolve("public")));
 
 app.use(express.urlencoded({ extended: false }));
 // app.use(express.json());
